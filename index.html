@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Advanced Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculator">
+    <header>
+      <h1>Calculator</h1>
+      <button id="themeToggle">🌙</button>
+    </header>
+
+    <section class="display">
+      <div id="expression" class="expression">0</div>
+      <div id="result" class="result">0</div>
+    </section>
+
+    <section class="keys">
+      <button class="key memory" data-action="MC">MC</button>
+      <button class="key memory" data-action="MR">MR</button>
+      <button class="key memory" data-action="M+">M+</button>
+      <button class="key memory" data-action="M-">M-</button>
+
+      <button class="key clear" data-action="AC">AC</button>
+      <button class="key" data-action="back">⌫</button>
+      <button class="key" data-value="(">(</button>
+      <button class="key" data-value=")">)</button>
+
+      <button class="key" data-value="7">7</button>
+      <button class="key" data-value="8">8</button>
+      <button class="key" data-value="9">9</button>
+      <button class="key op" data-value="/">÷</button>
+
+      <button class="key" data-value="4">4</button>
+      <button class="key" data-value="5">5</button>
+      <button class="key" data-value="6">6</button>
+      <button class="key op" data-value="*">×</button>
+
+      <button class="key" data-value="1">1</button>
+      <button class="key" data-value="2">2</button>
+      <button class="key" data-value="3">3</button>
+      <button class="key op" data-value="-">−</button>
+
+      <button class="key zero" data-value="0">0</button>
+      <button class="key" data-value=".">.</button>
+      <button class="key equal" data-action="=">=</button>
+      <button class="key op" data-value="+">+</button>
+    </section>
+
+    <section class="history">
+      <h2>History</h2>
+      <ul id="historyList"></ul>
+    </section>
+
+    <div class="hint">Tip: Type on your keyboard. Enter =, Backspace delete.</div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
